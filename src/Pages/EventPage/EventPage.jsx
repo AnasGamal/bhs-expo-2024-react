@@ -3,7 +3,7 @@ import { Banner, PaypalSponsorForm } from "../../components";
 import smile from "../../assets/smile.jpg";
 import platinum_ from "../../assets/firstPlat.svg";
 import gold_ from "../../assets/gold.svg";
-import silver_ from "../../assets/Silver.svg";
+import silver_ from "../../assets/silver.svg";
 import bronze_ from "../../assets/bronze2.svg";
 
 const EventPage = () => {
