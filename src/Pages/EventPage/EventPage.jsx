@@ -2,7 +2,7 @@ import {React,useState, useEffect} from "react";
 import { Banner, PaypalSponsorForm } from "../../components";
 import smile from "../../assets/smile.jpg";
 import platinum_ from "../../assets/firstPlat.svg";
-import gold_ from "../../assets/Gold.svg";
+import gold_ from "../../assets/gold.svg";
 import silver_ from "../../assets/Silver.svg";
 import bronze_ from "../../assets/bronze2.svg";
 
