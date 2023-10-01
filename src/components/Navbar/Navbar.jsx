@@ -22,13 +22,13 @@ const Navbar = () => {
     }
   }, [clickedToggled]);
   return (
-    <div className="w-full h-[80px] z-10 fixed top-0 bg-orange-500 text-white">
+    <div className="w-full h-[70px] z-10 fixed top-0 bg-orange-500 text-white relative">
       <div className="flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto">
         <div className="flex items-center">
           <img
             src={bhcfl}
             alt="logo"
-            className="ml-5 ss:ml-10 md:ml-5 object-comtain opacity-[55%] w-full h-[25px]"
+            className="ml-5 ss:ml-10 md:ml-5 object-contain opacity-[105%] max-h-[25px] max-w-full"
           />
         </div>
         <div className="flex items-center">
@@ -54,7 +54,7 @@ const Navbar = () => {
         </Link>
 
         <div
-          className="md:hidden text-white rounded-full p-1 mr-2"
+          className="md:hidden text-white rounded-full p-0 mr-2"
           onClick={handleClick}
           style={{
             background: `repeating-linear-gradient(45deg, red, red 20px, black 20px, black 40px, green 40px, green 60px)`,
@@ -71,13 +71,25 @@ const Navbar = () => {
         <Link to="/" className="hover:text-[orange]" onClick={handleLinkClick}>
           <li>Home</li>
         </Link>
-        <Link to="/about" className="hover:text-[orange]" onClick={handleLinkClick}>
+        <Link
+          to="/about"
+          className="hover:text-[orange]"
+          onClick={handleLinkClick}
+        >
           <li>About</li>
         </Link>
-        <Link to="/blogs" className="hover:text-[orange]" onClick={handleLinkClick}>
+        <Link
+          to="/blogs"
+          className="hover:text-[orange]"
+          onClick={handleLinkClick}
+        >
           <li>Blogs</li>
         </Link>
-        <Link to="/event" className="hover:text-[orange]" onClick={handleLinkClick}>
+        <Link
+          to="/event"
+          className="hover:text-[orange]"
+          onClick={handleLinkClick}
+        >
           <li>Event</li>
         </Link>
 

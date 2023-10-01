@@ -1,4 +1,5 @@
 import React from "react";
+import mrsRasheeda from "../../assets/mrsRasheeda.jpg";
 
 const FounderCard = () => {
   return (
@@ -8,8 +9,8 @@ const FounderCard = () => {
           <div class="p-4">
             <div class="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
               <img
-                class="rounded-lg lg:h-[300px] h-[200px] w-full object-cover"
-                src="https://tecdn.b-cdn.net/img/new/slides/017.webp"
+                class="rounded-lg lg:h-[500px] h-[200px] w-full object-cover"
+                src= {mrsRasheeda}
                 alt=""
               />
             </div>

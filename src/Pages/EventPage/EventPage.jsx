@@ -1,10 +1,11 @@
-import {React,useState, useEffect} from "react";
+import {React,} from "react";
 import { Banner, PaypalSponsorForm } from "../../components";
-import smile from "../../assets/smile.jpg";
+import vendor from "../../assets/vendor2.jpg";
 import platinum_ from "../../assets/firstPlat.svg";
 import gold_ from "../../assets/gold.svg";
 import silver_ from "../../assets/silver.svg";
 import bronze_ from "../../assets/bronze2.svg";
+import { Link } from "react-router-dom";
 
 const EventPage = () => {
   
@@ -15,7 +16,7 @@ const EventPage = () => {
   return (
     <div className="relative">
       <div className="relative ">
-        <Banner imageUrl={smile} width={"full"} height={"screen"} />
+        <Banner imageUrl={vendor} width={"full"} height={"screen"} />
 
         <div className="absolute top-[40%] left-0 p-10">
           <div class=" md:w-[60%] md:h-[60%] lg:w-[60%] md:h-[100%] lg:h-[100%] xxl:w-[50%] block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700  md:py-20 lg:py-20 sm:py-20 xxs:py-20">
@@ -26,12 +27,15 @@ const EventPage = () => {
               If you want to be a sponsor at this amazing event, please fill out
               the form below.
             </p>
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdxiXtsH7D73e_X6RsrKsBkG0tBzy3u0gNZv3waSf2TmfMbrg/viewform">
+         
             <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-600 to-orange-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 BE A SPONSOR
               </span>
               <div></div>
             </button>
+            </Link>
           </div>
         </div>
       </div>
