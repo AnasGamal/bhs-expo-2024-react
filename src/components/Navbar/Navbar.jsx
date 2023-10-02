@@ -22,7 +22,7 @@ const Navbar = () => {
     }
   }, [clickedToggled]);
   return (
-    <div className="w-full h-[80px] z-10 fixed top-0 bg-orange-500 text-white">
+    <div className="w-full h-[70px] z-10 fixed top-0 bg-orange-500 text-white relative">
       <div className="flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto">
         <div className="flex items-center">
           <img
@@ -54,7 +54,7 @@ const Navbar = () => {
         </Link>
 
         <div
-          className="md:hidden text-white rounded-full p-1 mr-2"
+          className="md:hidden text-white rounded-full p-0 mr-2"
           onClick={handleClick}
           style={{
             background: `repeating-linear-gradient(45deg, red, red 20px, black 20px, black 40px, green 40px, green 60px)`,
