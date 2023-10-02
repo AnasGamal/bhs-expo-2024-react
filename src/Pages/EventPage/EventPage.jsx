@@ -6,6 +6,8 @@ import gold_ from "../../assets/gold.svg";
 import silver_ from "../../assets/silver.svg";
 import bronze_ from "../../assets/bronze2.svg";
 import { Link } from "react-router-dom";
+import SilentAuction from "./SilentAuction";
+import VendorPage from "./VendorPage";
 
 const EventPage = () => {
   
@@ -33,7 +35,6 @@ const EventPage = () => {
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 BE A SPONSOR
               </span>
-              <div></div>
             </button>
             </Link>
           </div>
@@ -382,6 +383,8 @@ const EventPage = () => {
           </div>
         </div>
       </div>
+      <SilentAuction/>
+      <VendorPage/>
     </div>
   );
 };
