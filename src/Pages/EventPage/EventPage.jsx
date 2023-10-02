@@ -7,6 +7,7 @@ import silver_ from "../../assets/silver.svg";
 import bronze_ from "../../assets/bronze2.svg";
 import { Link } from "react-router-dom";
 import SilentAuction from "./SilentAuction";
+import VendorPage from "./VendorPage";
 
 const EventPage = () => {
   
@@ -383,6 +384,7 @@ const EventPage = () => {
         </div>
       </div>
       <SilentAuction/>
+      <VendorPage/>
     </div>
   );
 };
