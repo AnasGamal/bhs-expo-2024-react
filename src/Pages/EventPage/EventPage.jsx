@@ -1,6 +1,6 @@
 import {React,} from "react";
 import { Banner, PaypalSponsorForm } from "../../components";
-import smile from "../../assets/smile.jpg";
+import vendor from "../../assets/vendor2.jpg";
 import platinum_ from "../../assets/firstPlat.svg";
 import gold_ from "../../assets/gold.svg";
 import silver_ from "../../assets/silver.svg";
@@ -18,7 +18,7 @@ const EventPage = () => {
   return (
     <div className="relative">
       <div className="relative ">
-        <Banner imageUrl={smile} width={"full"} height={"screen"} />
+        <Banner imageUrl={vendor} width={"full"} height={"screen"} />
 
         <div className="absolute top-[40%] left-0 p-10">
           <div class=" md:w-[60%] md:h-[60%] lg:w-[60%] md:h-[100%] lg:h-[100%] xxl:w-[50%] block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700  md:py-20 lg:py-20 sm:py-20 xxs:py-20">
