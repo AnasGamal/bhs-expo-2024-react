@@ -1,4 +1,4 @@
-import { BlogContentPage, BlogPage, HomePage, AboutPage, EventPage } from "./Pages"
+import { BlogContentPage, BlogPage, HomePage, AboutPage, EventPage, EventRegistration } from "./Pages"
 import { Navbar, Footer } from "./components" 
 import { Routes, Route } from "react-router-dom"
 import useFetch from "./hooks/useFetch"
@@ -19,6 +19,8 @@ export default function App() {
         <Route path="/blog/:id" element={<BlogContentPage blogs = {data? data:""}/>} />
         <Route path="/about" element= {<AboutPage />} />
         <Route path="/event" element= {<EventPage />} />
+        <Route path="/eventRegistration" element= {<EventRegistration />} />
+        
       </Routes>
       <Footer />
     </div>

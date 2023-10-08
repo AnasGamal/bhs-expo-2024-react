@@ -6,6 +6,8 @@ import FounderCard from "./FounderCard/FounderCard";
 import Banner from "./MainBanner/Banner";
 import PaypalSponsorForm from "./PaypalSponsorForm/PaypalSponsorForm";
 import PayPalDonationForm from "./PayPalForm/PayPalForm";
+import EventRegisterCard from "./EventRegisterCard/EventRegisterCard";
+import EventInformationCard from "./EventRegisterCard/EventInformationCard";
 
 export {
     Navbar,
@@ -15,6 +17,8 @@ export {
     FounderCard,
     Banner,
     PaypalSponsorForm,
-    PayPalDonationForm
+    PayPalDonationForm,
+    EventRegisterCard,
+    EventInformationCard
     
 }

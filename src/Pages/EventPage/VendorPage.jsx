@@ -1,6 +1,7 @@
 import React from "react";
 import vendor4 from "../../assets/vendor4.jpg";
 import { PayPalDonationForm } from "../../components";
+import { Link } from "react-router-dom";
 
 const VendorPage = () => {
   const hostedButtonId = "CDC4HQNNC5Q5A";
@@ -98,9 +99,13 @@ const VendorPage = () => {
                 <div className="text-lg mb-4">
                   Click on the button below to register as a vendor.
                 </div>
+                <Link to={"https://docs.google.com/forms/d/e/1FAIpQLSfp0SLbInjHYv4Ffi9YlGUW94dQnQFhY9BnRphv0gtLarddpA/viewform"}>
+                
+              
                 <button className="bg-orange-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                   Registration Form
                 </button>
+                </Link>
               </div>
 
               {/* Divider */}

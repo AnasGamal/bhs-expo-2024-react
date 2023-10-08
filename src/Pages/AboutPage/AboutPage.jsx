@@ -19,31 +19,31 @@ const AboutPage = () => {
             ></div>
           </div>
           <div className="lg:px-20 md:px-20 py-20 p-4">
-            <dl className="max-w-md text-black-900 divide-y divide-gray-200 dark:text-white dark:divide-gray-700">
+            <dl className="max-w-md text-black-900 divide-y divide-gray-200">
               <div className="flex flex-col pb-3">
-                <dt className="mb-1 text-black-500 md:text-lg dark:text-gray-400">
+                <dt className="mb-1 text-black-500 md:text-xl">
                   GOAL 1
                 </dt>
-                <dd className="text-lg font-semibold">
+                <dd className="text-lg font-semibold text-black text-black">
                   Connect community services & businesses with all community
                   members, as well as to provide resources and connections for
                   new or returning homeschooling families.
                 </dd>
               </div>
               <div className="flex flex-col py-3">
-                <dt className="mb-1 text-black-500 md:text-lg dark:text-black-400">
+                <dt className="mb-1 text-black-500 md:text-lg  text-black">
                   GOAL 2
                 </dt>
-                <dd className="text-lg font-semibold">
+                <dd className="text-lg font-semibold text-black">
                   To showcase and support our budding youth entrepreneurs and
                   artists.
                 </dd>
               </div>
-              <div className="flex flex-col pt-3">
-                <dt className="mb-1 text-black-500 md:text-lg dark:text-black-400">
+              <div className="flex flex-col pt-3 text-black">
+                <dt className="mb-1 text-black-500 md:text-lg text-black">
                   GOAL 3
                 </dt>
-                <dd className="text-lg font-semibold">
+                <dd className="text-lg font-semibold text-black">
                   To continue fundraising for our Community Homeschool Resource
                   Center where families in the Greater Central Florida Area can
                   come for classes, resources, lending library, curriculum,

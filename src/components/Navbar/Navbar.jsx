@@ -47,7 +47,8 @@ const Navbar = () => {
             </Link>
           </ul>
         </div>
-        <Link to="https://www.eventbrite.com/e/community-expo-2024-february-24-2024-tickets-222691495257">
+        {/* {to="https://www.eventbrite.com/e/community-expo-2024-february-24-2024-tickets-222691495257"} */}
+        <Link to="/eventRegistration">
           <div className="hidden md:flex sm:mr-10 md:mr-10">
             <button className="px-4 py-2">Event Registration</button>
           </div>

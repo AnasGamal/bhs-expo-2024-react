@@ -1,4 +1,4 @@
-import {React,} from "react";
+import { React } from "react";
 import { Banner, PaypalSponsorForm } from "../../components";
 import vendor from "../../assets/vendor2.jpg";
 import platinum_ from "../../assets/firstPlat.svg";
@@ -10,11 +10,6 @@ import SilentAuction from "./SilentAuction";
 import VendorPage from "./VendorPage";
 
 const EventPage = () => {
-  
-
-
-    
-
   return (
     <div className="relative">
       <div className="relative ">
@@ -30,12 +25,11 @@ const EventPage = () => {
               the form below.
             </p>
             <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdxiXtsH7D73e_X6RsrKsBkG0tBzy3u0gNZv3waSf2TmfMbrg/viewform">
-         
-            <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-600 to-orange-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                BE A SPONSOR
-              </span>
-            </button>
+              <button className="relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-600 to-orange-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                  BE A SPONSOR
+                </span>
+              </button>
             </Link>
           </div>
         </div>
@@ -53,84 +47,82 @@ const EventPage = () => {
           <div>
             <ul class="text-white  font-serif">
               <li class="border-b border-gray pb-2">
-               
-                  <div className="relative">
-                    <div className="flex items-center mb-10">
-                      <img src={platinum_} className="mr-2" alt="Platinum" />
-                      <div className="text-green-500">PLATINUM</div>
+                <div className="relative">
+                  <div className="flex items-center mb-10">
+                    <img src={platinum_} className="mr-2" alt="Platinum" />
+                    <div className="text-green-500">PLATINUM</div>
+                  </div>
+                  <div className="grid gap-2 lg:grid-cols-4 mb-6">
+                    <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        1000$
+                      </h5>
+                      <p className="font-normal text-gray-700 dark:text-gray-400">
+                        <ul>
+                          <li>
+                            A dedicated sponsor space at the event, including a
+                            table and chairs in a prime location.
+                          </li>
+                          <li>
+                            A full-page advertisement in the organization's 2024
+                            journal. The opportunity to submit a 1-minute
+                            promotional video to showcase the sponsor's
+                            business.
+                          </li>
+                        </ul>
+                      </p>
                     </div>
-                    <div className="grid gap-2 lg:grid-cols-4 mb-6">
-                      <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                          1000$
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                          <ul>
-                            <li>
-                              A dedicated sponsor space at the event, including
-                              a table and chairs in a prime location.
-                            </li>
-                            <li>
-                              A full-page advertisement in the organization's
-                              2024 journal. The opportunity to submit a 1-minute
-                              promotional video to showcase the sponsor's
-                              business.
-                            </li>
-                          </ul>
-                        </p>
-                      </div>
-                      <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                          ...
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                          <ul>
-                            <li>
-                              Inclusion of up to three promotional items in grab
-                              bags and a branded promotional item.
-                            </li>
-                            <li>
-                              Mention and recognition during the event,
-                              including video presentations.
-                            </li>
-                          </ul>
-                        </p>
-                      </div>
-                      <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                          ...
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                          <ul>
-                            <li>
-                              A 3-minute spotlight presentation during the main
-                              event, followed by a 30-minute breakout session in
-                              a dedicated workshop area.
-                            </li>
-                            <li>
-                              The choice of promotional signage options at the
-                              event venue, such as yard signs, feather flags, or
-                              retractable banners.
-                            </li>
-                          </ul>
-                        </p>
-                      </div>
-                      <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                          ...
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                          <ul>
-                            <li>
-                              Promotion of the sponsor's business on the
-                              organization's website.
-                            </li>
-                          </ul>
-                        </p>
-                      </div>
+                    <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        ...
+                      </h5>
+                      <p className="font-normal text-gray-700 dark:text-gray-400">
+                        <ul>
+                          <li>
+                            Inclusion of up to three promotional items in grab
+                            bags and a branded promotional item.
+                          </li>
+                          <li>
+                            Mention and recognition during the event, including
+                            video presentations.
+                          </li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        ...
+                      </h5>
+                      <p className="font-normal text-gray-700 dark:text-gray-400">
+                        <ul>
+                          <li>
+                            A 3-minute spotlight presentation during the main
+                            event, followed by a 30-minute breakout session in a
+                            dedicated workshop area.
+                          </li>
+                          <li>
+                            The choice of promotional signage options at the
+                            event venue, such as yard signs, feather flags, or
+                            retractable banners.
+                          </li>
+                        </ul>
+                      </p>
+                    </div>
+                    <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        ...
+                      </h5>
+                      <p className="font-normal text-gray-700 dark:text-gray-400">
+                        <ul>
+                          <li>
+                            Promotion of the sponsor's business on the
+                            organization's website.
+                          </li>
+                        </ul>
+                      </p>
                     </div>
                   </div>
-                
+                </div>
               </li>
               <li class="border-b border-gray pb-2">
                 <div className="relative">
@@ -312,7 +304,7 @@ const EventPage = () => {
                   <div className="grid gap-2 lg:grid-cols-4 mb-6">
                     <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
                       <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        1000$
+                        400$
                       </h5>
                       <p className="font-normal text-gray-700 dark:text-gray-400">
                         <ul>
@@ -379,12 +371,64 @@ const EventPage = () => {
                   </div>
                 </div>
               </li>
+              <li class="border-b border-gray pb-2">
+                <div className="relative">
+                  <div className="flex items-center mb-10">
+                    <div className="text-green-500">JOURNAL SPONSOR</div>
+                  </div>
+                  <div className="grid gap-2 lg:grid-cols-4 mb-6">
+                    <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        350$
+                      </h5>
+                      <p className="font-normal text-gray-700 dark:text-gray-400">
+                        <ul>
+                          <li>
+                            Receive an 8'x 8' space in the Bronze Reserved Area,
+                            equipped with a 6ft table and 2 chairs.
+                          </li>
+                          <li>
+                            Submit a 15-second promotional video to showcase
+                            your business during the event.
+                          </li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="border-b border-gray pb-2">
+                <div className="relative">
+                  <div className="flex items-center mb-10">
+                    <div className="text-green-500">DECORATION & HOSPITALITY SPONSOR</div>
+                  </div>
+                  <div className="grid gap-2 lg:grid-cols-4 mb-6">
+                    <div className="block max-w-sm p-2 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+                      <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        350$
+                      </h5>
+                      <p className="font-normal text-gray-700 dark:text-gray-400">
+                        <ul>
+                          <li>
+                            Receive an 8'x 8' space in the Bronze Reserved Area,
+                            equipped with a 6ft table and 2 chairs.
+                          </li>
+                          <li>
+                            Submit a 15-second promotional video to showcase
+                            your business during the event.
+                          </li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-      <SilentAuction/>
-      <VendorPage/>
+      <SilentAuction />
+      <VendorPage />
     </div>
   );
 };
