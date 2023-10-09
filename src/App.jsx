@@ -1,6 +1,10 @@
 import { BlogContentPage, BlogPage, HomePage, AboutPage, EventPage, EventRegistration } from "./Pages"
 import { Navbar, Footer } from "./components" 
 import { Routes, Route } from "react-router-dom"
+import useFetch from "./hooks/useFetch"
+import { getPosts } from './services/sanity'
+
+import {createClient} from '@sanity/client'
 
 
 export default function App() {
@@ -12,6 +16,10 @@ export default function App() {
   // if (loading)  return <div>Loading...</div>
   // if (error) return <div>Something went wrong: {error}</div>
 
+
+  getPosts().then((blogs) => {
+    console.log(blogs)
+  })
   // console.log(data)
   return (
     <div>
