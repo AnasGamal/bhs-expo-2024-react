@@ -93,10 +93,11 @@ const Navbar = () => {
         >
           <li>Event</li>
         </Link>
-
-        <div className="flex flex-col my-4">
-          <button className="px-8 py-3">Event Registration</button>
-        </div>
+        <Link to="/eventRegistration">
+          <div className="flex flex-col my-4">
+            <button className="px-8 py-3">Event Registration</button>
+          </div>
+        </Link>
       </ul>
     </div>
   );
