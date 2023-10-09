@@ -1,9 +1,12 @@
 import { BlogContentPage, BlogPage, HomePage, AboutPage, EventPage, EventRegistration } from "./Pages"
 import { Navbar, Footer } from "./components" 
 import { Routes, Route } from "react-router-dom"
-import useFetch from "./hooks/useFetch"
+
 
 export default function App() {
+  
+
+
   // let {loading, error, data} = useFetch("http://localhost:1337/api/blogs?populate=*")
   let data = undefined;
   // if (loading)  return <div>Loading...</div>
