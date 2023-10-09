@@ -2,6 +2,10 @@ import { BlogContentPage, BlogPage, HomePage, AboutPage, EventPage } from "./Pag
 import { Navbar, Footer } from "./components" 
 import { Routes, Route } from "react-router-dom"
 import useFetch from "./hooks/useFetch"
+import { getPosts } from './services/sanity'
+
+import {createClient} from '@sanity/client'
+
 
 export default function App() {
   // let {loading, error, data} = useFetch("http://localhost:1337/api/blogs?populate=*")
@@ -9,6 +13,10 @@ export default function App() {
   // if (loading)  return <div>Loading...</div>
   // if (error) return <div>Something went wrong: {error}</div>
 
+
+  getPosts().then((blogs) => {
+    console.log(blogs)
+  })
   // console.log(data)
   return (
     <div>
