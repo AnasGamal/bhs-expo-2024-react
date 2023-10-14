@@ -45,7 +45,7 @@ const Blogs = ( { posts } ) => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 ss:grid-cols-1 gap-8 px-4 text-black">
           {posts.map((blog) => {
             return (
-              <Link to={`/blog/${blog._id}`}
+              <Link to={`/blog/${blog.slug.current}`}
               key={`${blog._id}`}>
                 <div className="bg-white rounded-xl overflow-hidden drop-shadow-md">
                   {/* <img

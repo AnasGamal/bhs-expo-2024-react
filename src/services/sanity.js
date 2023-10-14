@@ -22,6 +22,12 @@ export async function getPostById(id) {
   const post = await client.fetch(`*[_type == "blog_post" && _id == "${id}"]`)
   return post[0]
 }
+
+export async function getPostBySlug(slug) {
+  const post = await client.fetch(`*[_type == "blog_post" && slug.current == "${slug}"]`)
+  return post[0]
+}
+
 // export async function createPost(blog_post) {
 //   const result = client.create(blog_post)
 //   return result
