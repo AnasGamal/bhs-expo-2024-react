@@ -2,6 +2,7 @@
 import {createClient} from '@sanity/client'
 // Import using ESM URL imports in environments that supports it:
 // import {createClient} from 'https://esm.sh/@sanity/client'
+import { useState, useEffect } from 'react';
 
 export const client = createClient({
   projectId: 'yaabocyz',
@@ -17,6 +18,10 @@ export async function getPosts() {
   return posts
 }
 
+export async function getPostById(id) {
+  const post = await client.fetch(`*[_type == "blog_post" && _id == "${id}"]`)
+  return post[0]
+}
 // export async function createPost(blog_post) {
 //   const result = client.create(blog_post)
 //   return result
