@@ -15,6 +15,15 @@ const BlogPage = () => {
     fetchData();
   }, []); // Empty dependency array ensures the effect runs once after initial render
 
+  if (!posts) {
+    return <div></div>
+  }
+
+  // sort posts by date
+  posts.sort((a, b) => {
+    return new Date(b._createdAt) - new Date(a._createdAt);
+  });
+
   return (
     <div>
         <Blogs posts={posts} />

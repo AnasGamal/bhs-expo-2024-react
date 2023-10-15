@@ -1,9 +1,9 @@
 import React from "react";
 import product1 from "../../assets/product1.jpg";
 import { Link } from "react-router-dom";
+import { urlFor } from "../../services/sanity";
 
 const Blogs = ( { posts } ) => {
-  console.log(posts)
 
   if (!posts) {
     return (
@@ -39,6 +39,7 @@ const Blogs = ( { posts } ) => {
 
     )
   }
+
   return (
     <div className="w-full bg-[#f9f9f9] py-[50px]">
       <div className="max-w-[1240px] mx-auto">
@@ -48,11 +49,17 @@ const Blogs = ( { posts } ) => {
               <Link to={`/blog/${blog.slug.current}`}
               key={`${blog._id}`}>
                 <div className="bg-white rounded-xl overflow-hidden drop-shadow-md">
-                  {/* <img
+                  { blog.coverImage? 
+                  <img
                     className="h-56 w-full object-cover"
-                    src={`http://localhost:1337${blog.attributes.coverImg.data[0].attributes.url}`}
+                    src={`${urlFor(blog.coverImage).url()}`}
                     alt="blog"
-                  /> */}
+                  /> : <div
+                  className="h-56 w-full object-cover bg-gray-300">
+
+                  </div>
+    
+                  }
                   <div className="p-8">
                     <h3 className="font-bold text-2xl my-1">
                       {blog.title}
