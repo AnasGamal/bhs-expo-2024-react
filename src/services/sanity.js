@@ -37,6 +37,11 @@ export async function getPostBySlug(slug) {
   return post[0]
 }
 
+export async function getPageBySlug(slug) {
+  const page = await client.fetch(`*[_type == "page" && slug.current == "${slug}"]`)
+  return page[0]
+}
+
 // export async function createPost(blog_post) {
 //   const result = client.create(blog_post)
 //   return result

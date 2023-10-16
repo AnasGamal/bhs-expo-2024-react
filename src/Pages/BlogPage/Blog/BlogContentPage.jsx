@@ -16,9 +16,6 @@ const BlogContentPage= ({blogs}) => {
     fetchData();
   }, [slug]); // Empty dependency array ensures the effect runs once after initial render
 
-  console.log(slug)
-  console.log(post)
-
   if (!post) {
     return
   }

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import HomePageAdvertize from "./HomePageAdvertize";
 
-const HomepageAbout = () => {
+const HomepageAbout = (section) => {
   return (
     <div className="relative w-full h-full bg-[#e0e0e0] py-[5%]">
       <div className="relative lg:top-1/2 lg:left-1/4 text-center lg:w-1/2 p-5">
@@ -26,7 +26,7 @@ const HomepageAbout = () => {
           </Link>
         </div>
       </div>
-      <HomePageAdvertize/>
+      
     </div>
   );
 };
