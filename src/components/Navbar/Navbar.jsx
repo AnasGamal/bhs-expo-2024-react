@@ -39,8 +39,8 @@ const Navbar = () => {
             <Link to="/about" className="hover:text-[#0A1426]">
               <li>About</li>
             </Link>
-            <Link to="/blogs" className="hover:text-[#0A1426]">
-              <li>News</li>
+            <Link to="/sponsors" className="hover:text-[#0A1426]">
+              <li>Partners & Presenters.</li>
             </Link>
             <Link to="/event" className="hover:text-[#0A1426]">
               <li>Event</li>
@@ -80,11 +80,11 @@ const Navbar = () => {
           <li>About</li>
         </Link>
         <Link
-          to="/blogs"
+          to="/sponsors"
           className="hover:text-[orange]"
           onClick={handleLinkClick}
         >
-          <li>Blogs</li>
+          <li>Partners & Presenters.</li>
         </Link>
         <Link
           to="/event"

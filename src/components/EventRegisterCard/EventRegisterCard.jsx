@@ -30,13 +30,13 @@ const EventRegisterCard = () => {
                 Register for Event
               </button>
             </Link>
-            <button
+            {/* <button
               type="button"
               href="#"
               className="inline-block rounded bg-black px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:bg-orange-500"
             >
               Add to Calendar
-            </button>
+            </button> */}
           </div>
         </div>
       </div>

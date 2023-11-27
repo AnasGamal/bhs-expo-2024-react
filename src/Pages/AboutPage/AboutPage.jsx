@@ -6,7 +6,7 @@ import {FounderCard} from "../../components/index.js";
 
 const AboutPage = () => {
   return (
-    <div className="relative">
+    <div className="relative mb-8">
       <Banner image={bhcfl_girls} />
       <div className="relative">
         <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
@@ -54,7 +54,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
-      <FounderCard/>
+      {/* <FounderCard/> */}
     </div>
   );
 };
