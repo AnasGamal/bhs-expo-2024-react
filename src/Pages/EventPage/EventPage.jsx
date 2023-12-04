@@ -1,15 +1,29 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import { Banner, PaypalSponsorForm } from "../../components";
 import vendor from "../../assets/vendor2.jpg";
 import platinum_ from "../../assets/firstPlat.svg";
 import gold_ from "../../assets/gold.svg";
 import silver_ from "../../assets/silver.svg";
 import bronze_ from "../../assets/bronze2.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SilentAuction from "./SilentAuction";
 import VendorPage from "./VendorPage";
 
 const EventPage = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Check if the navigation source is from the "Donate" link
+    const isDonateLink = location.state && location.state.fromDonate;
+
+    if (isDonateLink) {
+      const sectionElement = document.getElementById('donation-id');
+      if (sectionElement) {
+        sectionElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
+
   return (
     <div className="relative">
       <div className="relative ">
@@ -34,7 +48,7 @@ const EventPage = () => {
           </div>
         </div>
       </div>
-      <div class="bg-gray-900 m-10 min-h-screen flex flex-col lg:m-10 m-6 md:mt-20 lg:mt-20 rounded-lg relative overflow-hidden xxxs:mt-10 xxxs:m-2">
+      <div id="donation-id" class="bg-gray-900 m-10 min-h-screen flex flex-col lg:m-10 m-6 md:mt-20 lg:mt-20 rounded-lg relative overflow-hidden xxxs:mt-10 xxxs:m-2">
         <div class="relative mt-20 lg:m-10 m-0 lg:p-10 p-2">
           <div className="flex justify-between">
             <div className="text-white lg:text-4xl text-2xl md:text-3xl font-serif pb-2">

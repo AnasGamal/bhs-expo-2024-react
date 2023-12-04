@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log(form.current)
+    emailjs
+      .sendForm(
+        "service_lyt4v2p",
+        "template_tfw006f",
+        form.current,
+        "CbOV0HM-pNvestVTi"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert("Your message has been sent successfully!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Something went wrong, please try again later.");
+        }
+      );
+  };
+
   return (
     <div className="py-2 px-4 mx-auto max-w-screen-md">
       <h2
@@ -13,10 +38,10 @@ export default function ContactForm() {
         className="mb-4 font-light text-left 
 						text-gray-500 sm:text-xl"
       >
-        Got a issue? Want to send feedback? Need details about the Event or our community? Let
-        us know.
+        Got a issue? Want to send feedback? Need details about the Event or our
+        community? Let us know.
       </p>
-      <form action="#">
+      <form ref={form} onSubmit={sendEmail}>
         <div className="flex flex-row">
           <div className="w-1/2 pr-2 ">
             <label
@@ -28,6 +53,7 @@ export default function ContactForm() {
             </label>
             <input
               type="text"
+              name="user_name"
               className="shadow-sm bg-gray-50 border 
 										border-gray-300 text-gray-900 
 										text-sm rounded-lg block w-full p-2.5"
@@ -45,6 +71,7 @@ export default function ContactForm() {
             </label>
             <input
               type="text"
+              name="user_last_name"
               className="shadow-sm bg-gray-50 border 
 										border-gray-300 text-gray-900 
 										text-sm rounded-lg block w-full p-2.5"
@@ -62,6 +89,7 @@ export default function ContactForm() {
           </label>
           <input
             type="email"
+            name="user_email"
             className="shadow-sm bg-gray-50 border 
 									border-gray-300 text-gray-900 
 									text-sm rounded-lg block w-full p-2.5"
@@ -79,6 +107,7 @@ export default function ContactForm() {
           </label>
           <input
             type="text"
+            name="subject"
             className="block p-3 w-full text-sm 
 									text-gray-900 bg-gray-50 rounded-lg 
 									border border-gray-300 shadow-sm "
@@ -95,6 +124,7 @@ export default function ContactForm() {
             Your message
           </label>
           <textarea
+            name="message"
             rows="6"
             className="block p-2.5 w-full text-sm 
 										text-gray-900 bg-gray-50 rounded-lg 

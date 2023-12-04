@@ -2,8 +2,8 @@ import React from 'react';
 
 const ContactInfo = () => {
   // Phone number and email
-  const phoneNumber = '123-456-7890';
-  const emailAddress = 'example@email.com';
+  const phoneNumber = '386-837-6270';
+  const emailAddress = 'communityexpo2@gmail.com';
 
   const handlePhoneClick = () => {
     // Check if the user is on a mobile device

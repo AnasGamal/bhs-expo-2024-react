@@ -1,4 +1,4 @@
-import { BlogContentPage, BlogPage, HomePage, AboutPage, EventPage, EventRegistration, ContactPage, SponsorPage } from "./Pages"
+import { BlogContentPage, BlogPage, HomePage, AboutPage, EventPage, EventRegistration, ContactPage, SponsorPage, SchedulePage } from "./Pages"
 import { Navbar, Footer } from "./components" 
 import { Routes, Route } from "react-router-dom"
 
@@ -22,6 +22,7 @@ export default function App() {
         <Route path="/eventRegistration" element= {<EventRegistration />} />
         <Route path="/contact-us" element= {<ContactPage />} />
         <Route path="/sponsors" element= {<SponsorPage />} />
+        <Route path="/schedule" element ={<SchedulePage/>} />
         
       </Routes>
       <Footer />

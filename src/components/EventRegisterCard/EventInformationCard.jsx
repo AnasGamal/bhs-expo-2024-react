@@ -23,12 +23,12 @@ const EventInformationCard = () => {
               {""}
               {/* Replace 'LocationIcon' with your actual icon component */}
               <h6 class="ml-9 text-base font-medium leading-tight">
-                {/**Location of Event will be here */}
-                421 N Woodland Blvd, DeLand, FL 32723
+              
+               The Sanborn Center 815 S. Alabama Ave Deland, FL 32724
               </h6>
             </div>
             <div className="px-0">
-              <LocationMap />
+              {/* <LocationMap /> */}
               <Carousel/>
             </div>
 

@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { EventInformationCard, EventRegisterCard } from "../../components";
+import { useLocation } from "react-router-dom";
 
 const EventRegistration = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  }, [location]);
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
       {/* Left Section (Hidden on small screens) */}

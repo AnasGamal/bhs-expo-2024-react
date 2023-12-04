@@ -45,6 +45,9 @@ const Navbar = () => {
             <Link to="/event" className="hover:text-[#0A1426]">
               <li>Event</li>
             </Link>
+            <Link to="/schedule" className="hover:text-[#0A1426]">
+              <li>Schedule</li>
+            </Link>
           </ul>
         </div>
         {/* {to="https://www.eventbrite.com/e/community-expo-2024-february-24-2024-tickets-222691495257"} */}
@@ -92,6 +95,14 @@ const Navbar = () => {
           onClick={handleLinkClick}
         >
           <li>Event</li>
+        </Link>
+
+        <Link
+          to="/schedule"
+          className="hover:text-[orange]"
+          onClick={handleLinkClick}
+        >
+          <li>Schedule</li>
         </Link>
         <Link to="/eventRegistration">
           <div className="flex flex-col my-4">

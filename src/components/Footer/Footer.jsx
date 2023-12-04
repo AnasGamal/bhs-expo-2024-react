@@ -26,13 +26,10 @@ const footerElements = [
     list: [
       {
         name: "Donate",
-        link: "/donate",
+        link: "/event",
+        state:{ fromDonate: true } 
       },
-      // {
-      //   name: "Volunteer",
-      //   link: "/volunteer",
-      // },
-    ],
+   ],
   },
   {
     title: "Company",
@@ -54,7 +51,7 @@ const Footer = () => {
             <h6 className="font-bold uppercase py-2">{element.title}</h6>
             <ol>
               {element.list.map((item) => (
-                <Link to={item.link}>
+                <Link to={item.link} state={item?.state}>
                   <li className="py-1" key={item}>
                     {item.name}
                   </li>

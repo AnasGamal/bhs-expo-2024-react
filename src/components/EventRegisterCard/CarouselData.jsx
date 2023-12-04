@@ -1,22 +1,15 @@
 export const CarouselData = [
     {
       image:
-        "https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+        "https://lh3.googleusercontent.com/p/AF1QipNZjhgrd3FOqOIlmBUXbTGpwOyBLzy5bEdt88LP=s1360-w1360-h1020",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80",
+        "https://s3-media0.fl.yelpcdn.com/bphoto/DKoVZLp2BdUOB1gGnY6jeg/o.jpg",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+        "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/276998767_2507900649341019_722451783238820068_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=a73e89&_nc_ohc=yBSyAdclb7EAX9jKA4u&_nc_ht=scontent-atl3-2.xx&oh=00_AfCQ4CSL893ABE7XHNvsdsoYmbfQC1rO7_0GfW4d06CfjA&oe=657251DE",
     },
-    {
-      image:
-        "https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80",
-    },
-    {
-      image:
-        "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
-    },
+  
   ];

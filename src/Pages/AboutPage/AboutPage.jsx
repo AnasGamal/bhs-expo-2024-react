@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "../../components/Banner/Banner";
 import bhcfl_girls from "../../assets/bhcfl_girls.jpg";
 import colorstack from "../../assets/unnamed.jpg";
 import {FounderCard} from "../../components/index.js";
+import { useLocation } from "react-router-dom";
 
 const AboutPage = () => {
+  const location = useLocation();
+  useEffect(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  }, [location]);
   return (
     <div className="relative mb-8">
       <Banner image={bhcfl_girls} />

@@ -6,6 +6,7 @@ import EventPage from "./EventPage/EventPage";
 import EventRegistration from "./EventRegistration/EventRegistration";
 import ContactPage from "./ContactPage/ContactPage";
 import SponsorPage from "./SponsorsPage/SponsorsPage";
+import SchedulePage from "./SchedulePage/Schedule";
 
 export {
 BlogPage,
@@ -15,5 +16,6 @@ AboutPage,
 EventPage,
 EventRegistration,
 ContactPage,
-SponsorPage
+SponsorPage,
+SchedulePage
 }
